@@ -20,10 +20,13 @@ var assert = require('./vendor/assert');
 
 //  Below, we will write an example of our test in action:
 
-var ricksFaveAnimal;
+var ricksFaveAnimal = 'penguin';
 
 function testRicksFaveAnimal() {
-  assert ();
+  assert (ricksFaveAnimal,
+    'ricksFaveAnimal exists!',
+    'ricksFaveAnimal is ' + typeof ricksFaveAnimal
+  );
 }
 
 testRicksFaveAnimal();
@@ -52,7 +55,10 @@ message. */
 function testWhichAnimal() {
   // TODO: Complete this assert function.
   // Don't forget your three arguments!
-  assert();
+  assert(nextAnimal,
+    'Let\'s go see the ' + nextAnimal,
+    'What are those ' + typeof nextAnimal
+  );
 };
 
 testWhichAnimal();
