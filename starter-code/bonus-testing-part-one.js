@@ -68,3 +68,5 @@ nextAnimal variable ... then invoke your test!
 When ready, execute this program in your terminal with node
 (node bonus-testing-part-one)  :-)
 Your code begins on the next line: */
+nextAnimal = favoriteAnimals[Math.floor(Math.random() * 4)];
+testWhichAnimal();
